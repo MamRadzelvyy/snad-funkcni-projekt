@@ -1,23 +1,27 @@
 body { 
   background-image: url("../img/bedna.jpg");
   max-width: 100%;
- 
+background-size: cover;
+
+height: auto; 
 }
 
 #cookie {
-  max-width: 130px;
+  max-width: 300px;
   width: 100%;
-  margin-left: 650px;
-  top: 150px;
-
-
+  left: 30%;
+  display: table;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .3s ease;
   position: absolute;
+  top: 10%;
   
 }
 
 
 .poc{ 
-  left: 650px;
+  left: 30%;
   top: 300px;
   width: 250px;
   height: 100px;
@@ -29,3 +33,47 @@ body {
   
   
 }
+
+#cookie:hover {
+  transform: scale(1.2);
+}
+#counter:hover {
+  transform: scale(1.1);
+}
+
+#wrapper {
+  display: table;
+  margin: 0 auto;
+  margin-top: 7em;
+}
+  
+#counter {
+    font-size: 62px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: .2s ease;
+    cursor: pointer;
+    outline: auto rgb(255, 255, 255);
+    top: 300px;
+    left: 35%;
+    position: absolute;
+  }
+  
+
+  #clickUpgrade{
+    right: 15%;
+    top: 10%;
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    border-radius: 20%;
+  }
+
+  #autoUpgrade{
+    right:15%;
+    top:30%;
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    border-radius: 20%;
+  }
