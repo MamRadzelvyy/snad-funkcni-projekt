@@ -8,6 +8,7 @@ let CookieIcreaseNumber = 1;
 let autoClickerIcreasNumber = 0;
 let autoUpgradeInterval;
 let clickUpgradePrice = 50;
+let autoUpgradePrice= 100;
 //arrow funkce () =>
 //scope {}
 cookie.onclick = () => {
@@ -28,14 +29,16 @@ clickUpgrade.onclick = () => {
     //zvednout  klikání o jedna
     CookieIcreaseNumber++;
     clickUpgradePrice *= 2;
-    clickUpgrade.innerHTML = `Coins: ${numberOfCookies}`;
+    clickUpgrade.innerHTML = `Clear the coin: ${clickUpgradePrice}`;
 
   }
 };
 autoUpgrade.onclick = () => {
-  if (numberOfCookies >= 100) {
-    numberOfCookies -= 100;
+  if (numberOfCookies >= autoUpgradePrice) {
+    numberOfCookies -= autoUpgradePrice;
+    autoUpgradePrice *= 2;
     counter.innerHTML = "Coins:" + numberOfCookies;
+    autoUpgrade.innerHTML = `Hire scuba diver: ${autoUpgradePrice}`;
     autoClickerIcreasNumber++;
     //zastavíse běžící iterval
     clearInterval(autoUpgradeInterval);
