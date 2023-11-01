@@ -9,6 +9,7 @@ let autoClickerIcreasNumber = 0;
 let autoUpgradeInterval;
 let clickUpgradePrice = 50;
 let autoUpgradePrice= 100;
+let coinLevel = 1;
 //arrow funkce () =>
 //scope {}
 cookie.onclick = () => {
@@ -30,9 +31,28 @@ clickUpgrade.onclick = () => {
     CookieIcreaseNumber++;
     clickUpgradePrice *= 2;
     clickUpgrade.innerHTML = `Clear the coin: ${clickUpgradePrice}`;
+    gemLevel += 1;
+    if (coinLevel== 2) {
+      cookie.src = '.res/img/coin3.png';
+    }
+
+    if (coinLevel== 3) {
+      cookie.src = '.res/img/coin4.png';
+    }
+
+    if (coinLevel == 4) {
+      cookie.src = '.res/img/coin2.png';
+    }
+
+    if (coinLevel == 5) {
+      cookie.src = '.res/img/coin.webp';
+    }
+
+ 
+  }
 
   }
-};
+
 autoUpgrade.onclick = () => {
   if (numberOfCookies >= autoUpgradePrice) {
     numberOfCookies -= autoUpgradePrice;
