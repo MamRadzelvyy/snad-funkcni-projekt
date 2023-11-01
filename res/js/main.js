@@ -31,21 +31,21 @@ clickUpgrade.onclick = () => {
     CookieIcreaseNumber++;
     clickUpgradePrice *= 2;
     clickUpgrade.innerHTML = `Clear the coin: ${clickUpgradePrice}`;
-    gemLevel += 1;
+    coinLevel += 1;
     if (coinLevel== 2) {
-      cookie.src = '.res/img/coin3.png';
+      cookie.src = 'res/img/coin3.png';
     }
 
     if (coinLevel== 3) {
-      cookie.src = '.res/img/coin4.png';
+      cookie.src = 'res/img/coin4.png';
     }
 
     if (coinLevel == 4) {
-      cookie.src = '.res/img/coin2.png';
+      cookie.src = 'res/img/coin2.png';
     }
 
     if (coinLevel == 5) {
-      cookie.src = '.res/img/coin.webp';
+      cookie.src = 'res/img/coin.png';
     }
 
  
