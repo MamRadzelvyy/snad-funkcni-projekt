@@ -4,7 +4,7 @@ const clickUpgrade = document.getElementById("clickUpgrade");
 const autoUpgrade = document.getElementById("autoUpgrade");
 
 let numberOfCookies = 0;
-let CookieIcreaseNumber = 2;
+let CookieIcreaseNumber = 5;
 let autoClickerIcreasNumber = 0;
 let autoUpgradeInterval;
 let clickUpgradePrice = 50;
